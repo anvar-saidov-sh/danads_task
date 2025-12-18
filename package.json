@@ -1,0 +1,36 @@
+{
+  "name": "danads",
+  "version": "1.0.0",
+  "description": "Simple REST API project with TS",
+  "keywords": [
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://github.com/anvar-saidov-sh/danads_task#readme",
+  "bugs": {
+    "url": "https://github.com/anvar-saidov-sh/danads_task/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvar-saidov-sh/danads_task.git"
+  },
+  "license": "ISC",
+  "author": "Anvar Saidov",
+  "type": "module",
+  "main": "main.ts",
+  "scripts": {
+    "test": "npm run test",
+    "build": "tsc --build",
+    "start": "node dist/main.js",
+    "dev": "nodemon ./src/main.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
