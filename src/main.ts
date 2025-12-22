@@ -1,12 +1,21 @@
-import express from 'express';
+import express from "express";
+import notesRoutes from "./routes/notesRoutes.js";
 
 const app = express();
-const PORT = 3000;
 
-app.get('/', (req, res, next) => {
-    res.send('Hello, World!');
+// Middleware to parse JSON
+app.use(express.json());
+
+// Routes
+app.use("/notes", notesRoutes);
+
+// 404 handler for unknown routes
+app.use((_req, res) => {
+    res.status(404).json({ error: "Route not found" });
 });
 
+// Start the server
+const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
