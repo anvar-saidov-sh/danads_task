@@ -8,7 +8,9 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
+    // "moduleResolution": "node",
     "target": "esnext",
+    "skipDefaultLibCheck": true,
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -43,5 +45,9 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+  },
+  "ts-node": {
+    "esm": true,
   }
+
 }
