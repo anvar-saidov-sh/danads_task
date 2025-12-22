@@ -14,15 +14,15 @@ const router = Router();
 router.get("/", getAllNotes);
 
 // GET /notes/:id
-router.get("/:id", getNoteById);
+router.get("/notes/:id", getNoteById);
 
 // POST /notes
-router.post("/create", validateNote, createNote);
+router.post("/notes", validateNote, createNote);
 
 // PUT /notes/:id
-router.put("/:id", validateNote, updateNote);
+router.put("/notes/:id", validateNote, updateNote);
 
 // DELETE /notes/:id
-router.delete("/:id", deleteNote);
+router.delete("/notes/:id", deleteNote);
 
 export default router;

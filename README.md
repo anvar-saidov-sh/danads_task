@@ -159,16 +159,8 @@ npm start
 
 ### Development mode (optional)
 
-* Watch for changes:
-
 ```bash
-tsc --watch
-```
-
-* Run nodemon in another terminal:
-
-```bash
-nodemon dist/main.js
+npm run dev
 ```
 
 * This setup automatically restarts the server on code changes
@@ -186,12 +178,6 @@ nodemon dist/main.js
   * `controllers/` → logic
   * `models/` → type definitions
   * `data/` → in-memory storage
-* **Future improvements**:
-
-  * Connect a database (MongoDB, PostgreSQL)
-  * Add pagination and keyword search
-  * Add user authentication
-
 ---
 
 ## 9. License
