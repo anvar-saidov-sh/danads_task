@@ -4,7 +4,6 @@
 
 **Project Name:** DanAds Notes API
 **Description:** A simple REST API for managing notes (CRUD operations) built with **Node.js, Express, and TypeScript**.
-**Purpose:** Internship technical assessment — demonstrates understanding of REST API design, backend development, TypeScript, and error handling.
 
 ---
 
@@ -15,7 +14,7 @@
 | Backend            | Node.js, Express                 |
 | Language           | TypeScript                       |
 | Data storage       | In-memory (no database required) |
-| Tooling            | concurrently, nodemon, npm       |
+| Tooling            | concurrently, npm                |
 | Version control    | Git                              |
 | Package management | npm                              |
 
