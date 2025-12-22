@@ -37,18 +37,19 @@
 
 ```
 src/
- ├── main.ts               # Entry point, sets up Express app
+ ├── main.ts               
  ├── routes/
- │    └── notesRoutes.ts   # Defines all /notes endpoints
+ │    └── notesRoutes.ts   
  ├── controllers/
- │    └── notesController.ts  # Logic for CRUD operations
+ │    └── notesController.ts  
  ├── models/
- │    └── Note.ts          # Note interface definition
+ │    └── Note.ts          
  ├── data/
- │    └── notesStore.ts    # In-memory data storage for notes
+ │    └── notesStore.ts    
  └── middleware/
-      └── errorHandler.ts  # Centralized error handling (optional)
-dist/                       # Compiled JavaScript output
+      └── errorHandler.ts
+      └── validateNote.ts
+dist/                       
 ```
 
 ---
